@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: grade-submission-portal
+spec:
+  type: NodePort
+  selector:
+    app.kubernetes.io/name: grade-submission-portal
+  ports:
+    - port: 5001       # Service port inside cluster
+      targetPort: 5001  # Pod container port
+      nodePort: 31000   # External access
+
