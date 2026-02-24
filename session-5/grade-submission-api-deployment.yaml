@@ -10,6 +10,11 @@ spec:
       app.kubernetes.io/name: grade-submission-api
       app.kubernetes.io/env: frontend
       app.kubernetes.io/instance: work-test
+  strategy:
+    type: rollingUpdate
+    rollingUpdate:
+      maxSurge: 50%
+      maxUnavailable: 50%
   template:
     metadata:
       labels:
