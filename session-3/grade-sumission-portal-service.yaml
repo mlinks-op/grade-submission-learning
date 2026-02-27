@@ -10,5 +10,5 @@ spec:
   ports:
     - port: 5001       # Service port inside cluster
       targetPort: 5001  # Pod container port
-      nodePort: 31000   # External access
+      nodePort: 32000   # External access
 
