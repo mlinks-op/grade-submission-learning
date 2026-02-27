@@ -12,3 +12,5 @@ spec:
       targetPort: 5001  # Pod container port
       nodePort: 32000   # External access
 
+# at this point namespscs is added to the deploymnet 
+# this is for grouping and Isolation
