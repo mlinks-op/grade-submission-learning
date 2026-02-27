@@ -11,3 +11,7 @@ spec:
       targetPort: 5001  # Pod container port
       nodePort: 31000   # External access
 
+# I exposed the portal on 31000 local host 
+# I was able to reach just the portal as there was no service to the Api
+
+# expose portal using node pod
